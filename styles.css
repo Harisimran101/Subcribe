@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+body {
+   overflow: hidden;
+  
+}
+
+.container {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   row-gap: 12px;
+}
+
+.container img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+}
+
+.webgl {
+   margin-top: 90px;
+   width: 300px;
+   height: 200px;
+   z-index: 10;
+}
+
+.progress-bar {
+   position: relative;
+   width: 100%;
+   max-width: 300px;
+   height: 50px;
+   background: transparent;
+   border: 0px solid;
+   border-image-slice: 1;
+   border-width: 8px;
+   border-image-source: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+   padding: 5px 5px;
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+
+}
+
+.bar {
+   width: 27px;
+   
+   height: 100%;
+
+}
+
+.heading {
+   position:relative;
+   font-size: 15px;
+   color: black;
+   font-family: 'Press Start 2P', cursive;
+
+   text-transform: uppercase;
+}
+
+.dot {
+    opacity: 0;
+    font-size: 26px;
+}
+
+.subscribe {
+     position: relative;
+     padding: 5px 10px;
+    font-size: 24px;
+    margin-top: 20px;
+     font-weight: 700;
+     background: red;
+    color: white;
+     display: grid;
+     place-items: center;
+     border-radius: 6px;
+     cursor: pointer;
+}
