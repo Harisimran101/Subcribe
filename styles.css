@@ -24,17 +24,16 @@ body {
 
 .container img {
    position: absolute;
-   left: 0;
-   top: 0;
+
    width: 100vw;
    height: 100vh;
-   object-fit: cover;
+
 }
 
 .webgl {
-   margin-top: 90px;
+   margin-top: 47px;
    width: 300px;
-   height: 200px;
+   height: 240px;
    z-index: 10;
 }
 
@@ -64,7 +63,7 @@ body {
 
 .heading {
    position:relative;
-   font-size: 15px;
+   font-size: 18px;
    color: black;
    font-family: 'Press Start 2P', cursive;
 
@@ -79,13 +78,19 @@ body {
 .subscribe {
      position: relative;
      padding: 5px 10px;
-    font-size: 24px;
-    margin-top: 20px;
+     font-size: 20px;
+     margin-top: 10px;
      font-weight: 700;
      background: red;
-    color: white;
+     color: white;
      display: grid;
      place-items: center;
      border-radius: 6px;
      cursor: pointer;
+}
+
+@media (max-width: 500px) {
+   .heading {
+       font-size: 15.5px;
+   }
 }

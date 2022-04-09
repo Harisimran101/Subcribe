@@ -8,7 +8,7 @@ const height = webgl.offsetHeight;
 const progressbar = document.querySelector('.progress-bar');
 const allbars = document.querySelectorAll('.bar');
 
-let subscribers = 100;
+let subscribers = 1000;
 
       
 const barpercentage = progressbar.offsetWidth / 100;
@@ -68,7 +68,10 @@ for(let i = 0; i < subscribers / 100; i++){
     bar.style.background = 'red';
 
     if(subscribers == "1000"){  
-     bar.style.background = 'green';  
+        bar.style.background = '#F4D03F';   
+
+      
+        bar.style.backgroundImage = "linear-gradient(132deg, #F4D03F 0%, #16A085 100%)"; 
      
      }
 
